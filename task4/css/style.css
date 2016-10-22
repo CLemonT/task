@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.center{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 400px;
+	height: 200px;
+	background-color: #ccc;
+	overflow: hidden;
+}
+
+.lt{
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #fc0;
+}
+
+.rb{
+	position: absolute;
+	bottom: -50px;
+	right: -50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #fc0;
+}
