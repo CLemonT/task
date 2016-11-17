@@ -1,0 +1,67 @@
+$(document).ready(function(){
+	
+	$(".projects-list1").click(function(){
+		$(".projects-list1").addClass("selected");
+		$(".projects-list2").removeClass("selected");
+		$(".projects-list3").removeClass("selected");
+		$(".projects-list4").removeClass("selected");
+		$(".projects-list5").removeClass("selected");
+		$(".item-1").show();
+		$(".item-2").hide();
+		$(".item-3").hide();
+		$(".item-4").hide();
+		$(".item-5").hide();
+	});
+	
+	$(".projects-list2").click(function(){
+		$(".projects-list2").addClass("selected");
+		$(".projects-list1").removeClass("selected");
+		$(".projects-list3").removeClass("selected");
+		$(".projects-list4").removeClass("selected");
+		$(".projects-list5").removeClass("selected");
+		$(".item-2").show();
+		$(".item-1").hide();
+		$(".item-3").hide();
+		$(".item-4").hide();
+		$(".item-5").hide();
+	});
+	
+	$(".projects-list3").click(function(){
+		$(".projects-list3").addClass("selected");
+		$(".projects-list2").removeClass("selected");
+		$(".projects-list1").removeClass("selected");
+		$(".projects-list4").removeClass("selected");
+		$(".projects-list5").removeClass("selected");
+		$(".item-3").show();
+		$(".item-2").hide();
+		$(".item-1").hide();
+		$(".item-4").hide();
+		$(".item-5").hide();
+	});
+	
+	$(".projects-list4").click(function(){
+		$(".projects-list4").addClass("selected");
+		$(".projects-list2").removeClass("selected");
+		$(".projects-list3").removeClass("selected");
+		$(".projects-list1").removeClass("selected");
+		$(".projects-list5").removeClass("selected");
+		$(".item-4").show();
+		$(".item-2").hide();
+		$(".item-3").hide();
+		$(".item-1").hide();
+		$(".item-5").hide();
+	});
+	
+	$(".projects-list5").click(function(){
+		$(".projects-list5").addClass("selected");
+		$(".projects-list2").removeClass("selected");
+		$(".projects-list3").removeClass("selected");
+		$(".projects-list4").removeClass("selected");
+		$(".projects-list1").removeClass("selected");
+		$(".item-5").show();
+		$(".item-2").hide();
+		$(".item-3").hide();
+		$(".item-4").hide();
+		$(".item-1").hide();
+	});
+});
