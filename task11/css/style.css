@@ -1,0 +1,232 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+body{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header {
+	position: relative; 
+	background-color: #91D4DA; 
+	height: 3.5rem;
+	line-height: 3.5rem; 
+	color: #fff;
+} 
+
+.header a{
+	position: absolute;
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+	font-size: 1.6rem;	
+}
+
+.header span{
+	position: absolute;
+	display: inline-block;
+	height: 3.5rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -1.75rem;
+	margin-left: -3.5rem;
+	font-size: 1.6rem;
+}
+
+.nav{
+	display: flex;
+	list-style: none;
+	text-align: center;
+}
+
+.nav li{
+	flex: 1;
+	display: inline-block;
+	box-sizing: border-box;
+	height: 3rem;
+	line-height: 3rem;
+}
+
+.added{
+	border-bottom: 5px solid #91D4DA;
+}
+
+.tab{
+	display: flex;
+	border-bottom: 1px solid #cccccc;
+}
+
+.tab .tabchild{
+	text-align: center;
+	padding: 7px 0 10px 0 ;
+}
+
+.tab .tabchild:nth-child(odd){
+	flex: 1;
+}
+
+.tab .tabchild:nth-child(even){
+	flex: 0.7;
+}
+
+.tab .doc{
+	width: 50px;
+	height: 50px;
+	padding-bottom: 2px;
+}
+
+.tab .tabtxt{
+	color: #000000;
+}
+
+.titlegroup{
+	display: flex;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.titlechild{
+	flex: 1;
+}
+
+.titlegroup .titlechild:nth-of-type(1) img,.titlegroup .titlechild:nth-of-type(2) img{
+	width: 80px;
+	height: 100px;
+}
+
+.titlegroup .titlechild:nth-of-type(3) img{
+	width: 100px;
+	height: 80px;
+	padding: 10px 0;
+}
+
+.titlegroup .titlechild+.titlechild{
+	border-left: 1px solid #cccccc;
+}
+
+.titlechild p:nth-of-type(2){
+	color: #000000;
+	font-size: 1.5rem;
+}
+
+.titlechild p:nth-of-type(3){
+	color: #666666;
+	font-size: 1rem;
+}
+
+.graybar{
+	background-color: #cccccc;
+	height: 1.2rem;
+}
+
+.module{
+	padding: 1rem;
+}
+
+.module h1{
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #cccccc;
+	font-size: 1.7rem;
+	font-weight: bold;
+	color: #000000;
+}
+
+.documentmenu{
+	display: flex;
+	padding-top: 1rem;
+}
+
+.docimg{
+	flex: 1;
+	margin-right: 0.4rem;
+}
+
+.document{
+	display: flex;
+	flex: 2;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.document span{
+	display: block;
+	flex: 1;
+	margin: 0.5rem;
+	padding: 0.7rem;
+	background-color: #CCCCCC;
+	border-radius: 0.5rem;
+	min-width: 5rem;
+	font-size: 1.1rem;
+}
+
+.document span:nth-child(even){
+	margin-right: 0;
+}
+
+.document span:nth-child(1),.document span:nth-child(2){
+	margin-top: 0;
+}
+
+.document span:nth-child(3),.document span:nth-child(4){
+	margin-bottom: 0;
+}
+
+.article{
+	display: flex;
+	padding: 0.7rem 1rem;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.artimg{
+	display: block;
+	flex: 1;
+} 
+
+.article .specific{
+	position: relative;
+	margin-left: 0.5rem;
+	flex: 2;
+}
+
+.article .specific h1{
+	position: absolute;
+	top: 0;
+	font-size: 22px;
+}
+
+.article .specific p{
+	position: absolute;
+	bottom: 0;
+	color: #CCCCCC;
+}
+
+.articlelast{
+	padding: 0.7rem 1rem;
+}
+
+.articlelast h1{
+	font-size: 22px;
+}
+
+.articlelast .articlelastimg{
+	display: flex;
+}
+
+.articlelast .articlelastimg div{
+	flex: 1;
+	margin: 0.6rem 0.5rem 0.6rem 0;
+}
+
+.articlelast .articlelastimg div:last-child{
+	margin-right: 0;
+}
+
+.articlelast p{
+	color: #CCCCCC;
+}
