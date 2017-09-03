@@ -1,0 +1,127 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	width: 80%;
+	padding: 20px;
+	margin: 20px auto;
+	box-shadow: 0 0 15px #cccccc;
+}
+
+table{
+	margin: 25px auto;
+	width: 50%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+table,th,td{
+	border: 2px solid #FFFFFF;
+}
+
+thead th{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+tbody tr:nth-child(1) td,tbody tr:nth-child(2) td,tbody tr:nth-child(3) td{
+	color: red;
+}
+
+tbody tr:nth-child(even){
+	background-color: #aaaaaa;
+}
+
+.search{
+	display: block;
+	margin: 25px auto;
+	border: 1px solid #6d6d6d;
+	border-radius: 5px;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	transition: width 0.5s;
+}
+
+.search:focus{
+	width: 400px;
+}
+
+.slideContainer{
+	position: relative;
+	width: 350px;
+	height: 200px;
+	margin: 25px auto;
+	overflow: hidden;
+}
+
+.slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300%;
+	height: 100%;
+	transition: left 1s;
+	list-style: none;
+}
+
+.slide li{
+	float: left;
+	width: 350px;
+	height: 100%;
+	font-size: 40px;
+	line-height: 200px;
+	text-align: center;
+}
+
+.slide li:nth-of-type(1){
+	background-color: #ff0;
+}
+
+.slide li:nth-of-type(2){
+	background-color: #0ff;
+}
+
+.slide li:nth-of-type(3){
+	background-color: #f0f;
+}
+
+.button{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 20;
+	text-align: center;
+}
+
+.button a{
+	margin-left: 2px;
+	float: left;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	color: #000;
+	background-color: #fff;
+	opacity: .8;
+	filter: alpha(opacity=80);
+}
+
+#slide1:target~.slide{
+	left: 0;
+}
+
+#slide2:target~.slide{
+	left: -100%;
+}
+
+#slide3:target~.slide{
+	left: -200%;
+}
