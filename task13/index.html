@@ -1,31 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>IFE JavaScript Task 01</title>
-  </head>
-<body>
 
-  <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
-  <button id="button" >确认填写</button>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <style>
+    #stage{
+        width:200px;
+        height:200px;
+        margin:200px auto;
+        -webkit-perspective:3000px;
+        -webkit-perspective-origin:50% 50%;
+    }
+    #boxGroup{
+        -webkit-transform-style:preserve-3d;   
+        position: relative;
+        -webkit-animation: z 3s linear infinite;
+    }
 
-  <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+    .box{
+        opacity:.75;
+        position: absolute;
+        width:200px;
+        height:200px;
+        color:white;
+        font-size:200px;
+        line-height:200px;
+        text-align:center;
+        border-radius:10px;
+    }
+    #box1{
+        background-color: black;
+        -moz-transform-origin:bottom;
+        -webkit-transform-origin:bottom;
+    }
+    #box2{
+        background-color: green;
+        -moz-transform-origin:right;
+        -moz-transform:rotateY(90deg);
+        -webkit-transform-origin:right;
+        -webkit-transform:rotateY(90deg);
+    }
+    #box3{
+        background-color: gold;
+        -moz-transform-origin:bottom;
+        -moz-transform:translateZ(200px);
+        -webkit-transform-origin:bottom;
+        -webkit-transform:translateZ(200px);
+    }
+    #box4{
+        background-color: blue;
+        -moz-transform-origin:left;
+        -moz-transform:rotateY(-90deg);
+        -webkit-transform-origin:left;
+        -webkit-transform:rotateY(-90deg);
+    }
+    #box5{
+        background-color: red;
+        -moz-transform-origin:top;
+        -moz-transform:rotateX(90deg);
+        -webkit-transform-origin:top;
+        -webkit-transform:rotateX(90deg);
+    }
+    #box6{
+        background-color: pink;
+        -moz-transform-origin: bottom;
+        -moz-transform: rotateX(-90deg);
+        -webkit-transform-origin: bottom;
+        -webkit-transform: rotateX(-90deg);
+    }
 
+    @-webkit-keyframes z{
+        0%{-webkit-transform:rotate3d(1,1,1,0deg);}
+        100%{-webkit-transform:rotate3d(1,1,1,360deg);}
+    }
+</style>
 <script type="text/javascript">
 
-(function() {
-  /*    
-  在注释下方写下代码
-  给按钮button绑定一个点击事件
-  在事件处理函数中
-  获取aqi-input输入的值，并显示在aqi-display中
-  */
- 	var confirmButton=document.getElementById("button");
-	confirmButton.onclick=function(){
-		document.getElementById("aqi-display").innerHTML=document.getElementById("aqi-input").value;
-	}
-})();
-
 </script>
+</head>
+
+<body>
+    <div id="stage">
+        <div id="boxGroup">
+            <a class="box" id="box1">1</a>
+            <a class="box" id="box2">2</a>
+            <a class="box" id="box3">3</a>
+            <a class="box" id="box4">4</a>
+            <a class="box" id="box5">5</a>
+            <a class="box" id="box6">6</a>
+        </div>
+    </div>
 </body>
+
 </html>
