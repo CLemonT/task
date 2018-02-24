@@ -10,11 +10,11 @@ task5  https://clemont.github.io/task/task5/index.html
 
 task6  https://clemont.github.io/task/task6/index.html
 
-task7  https://clemont.github.io/task/task7/index.html
+task7（志愿者申请系统）  https://clemont.github.io/task/task7/index.html
 
 task8  https://clemont.github.io/task/task8/index.html
 
-task9  https://clemont.github.io/task/task9/index.html
+task9（交易查询系统）  https://clemont.github.io/task/task9/index.html
 
 task10  https://clemont.github.io/task/task10/index.html
 
