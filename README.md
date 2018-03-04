@@ -25,3 +25,5 @@ task12(css3效果)  https://clemont.github.io/task/task12/index.html
 task14(css3效果——3d特效)  https://clemont.github.io/task/task14/index.html
 
 task15(bootstrap框架)  https://clemont.github.io/task/task15/index.html
+
+task16(canvas时钟)  https://clemont.github.io/task/task16/index.html
