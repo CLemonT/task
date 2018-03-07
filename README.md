@@ -28,4 +28,4 @@ task15(bootstrap框架)  https://clemont.github.io/task/task15/index.html
 
 task16(canvas时钟)  https://clemont.github.io/task/task16/index.html
 
-task17(html5游戏)  https://clemont.github.io/task/task18/fishGame.html
+task18(html5游戏)  https://clemont.github.io/task/task18/fishGame.html
