@@ -51,9 +51,9 @@ babyObj.prototype.draw = function(){
 
 	// 小鱼身体
 	this.babyBodyTimer += deltaTime;
-	if(this.babyBodyTimer > 115){
+	if(this.babyBodyTimer > 200){
 		this.babyBodyCount = this.babyBodyCount + 1;
-		this.babyBodyTimer %= 115;
+		this.babyBodyTimer %= 200;
 		if(this.babyBodyCount > 19){
 			this.babyBodyCount = 19;
 			// game over
