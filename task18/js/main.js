@@ -35,6 +35,9 @@ var circle;
 var dust;
 var dustPic = [];
 
+var restart;
+var loopId;
+
 document.body.onload = game;
 
 function game(){
@@ -98,6 +101,7 @@ function init(){
 	}
 
 	data = new dataObj();
+	data.init();
 
 	for(var i = 0; i < 8; i++){
 		momBodyOrange[i] = new Image();
@@ -121,10 +125,13 @@ function init(){
 	}
 	dust = new dustObj();
 	dust.init();
+
+	restart = new restartObj();
+	restart.init();
 }
 
 function gameLoop(){
-	window.requestAnimFrame(gameLoop);
+	restartId = window.requestAnimFrame(gameLoop);
 	var now = Date.now();
 	deltaTime = now - lastTime;
 	lastTime = now;
@@ -147,6 +154,7 @@ function gameLoop(){
 	circle.draw();
 	dust.draw();
 	drawAuthor();
+	restart.show();
 }
 
 function onMouseMove(e){

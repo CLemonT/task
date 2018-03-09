@@ -1,4 +1,11 @@
 var dataObj = function(){
+	this.fruitNum;
+	this.double;
+	this.score;
+	this.gameOver;
+	this.alpha;
+}
+dataObj.prototype.init = function(){
 	this.fruitNum = 0;
 	this.double = 1;
 	this.score = 0;

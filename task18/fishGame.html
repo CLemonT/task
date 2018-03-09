@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>大鱼喂小鱼</title>
+	<title>爱心鱼</title>
 	<style type="text/css">
 		*{
 			padding: 0;
@@ -39,6 +39,26 @@
 		.rule p{
 			margin: 10px 0;
 		}
+		#restart{
+			display: none;
+			position: absolute;
+			z-index: 10;
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			text-shadow: 0.1em 0.1em 0.25em #fff;
+			top: 53%;
+			left: 50%;
+			margin-left: -50px;
+			font: 20px "Verdana";
+			color:    #C1FFC1 ;
+			cursor: pointer;
+		}
+		#restart:hover{
+			color: #FF6347;
+			text-shadow: 0.1em 0.1em 0.15em #FF6347;
+		}
 	</style>
 </head>
 <body>
@@ -47,6 +67,7 @@
 			<canvas id="canvas1" width="800px" height="600px"></canvas>
 			<canvas id="canvas2" width="800px" height="600px"></canvas>
 		</div>
+		<div id="restart">restart</div>
 	</div>
 	<div class="rule">
 		<p>游戏规则：</p>
@@ -67,5 +88,6 @@
 	<script type="text/javascript" src="js/circle.js"></script>
 	<script type="text/javascript" src="js/dust.js"></script>
 	<script type="text/javascript" src="js/author.js"></script>
+	<script type="text/javascript" src="js/restart.js"></script>
 </body>
 </html>

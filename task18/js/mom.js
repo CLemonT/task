@@ -21,8 +21,8 @@ momObj.prototype.init = function(){
 }
 momObj.prototype.draw = function(){
 	// 趋向鼠标X,Y
-	this.x = lerpDistance(mx, this.x, 0.985);
-	this.y = lerpDistance(my, this.y, 0.985);
+	this.x = lerpDistance(mx, this.x, 0.98);
+	this.y = lerpDistance(my, this.y, 0.98);
 
 	// 旋转角度
 	// Math.atan2(y, x)
